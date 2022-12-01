@@ -1,18 +1,18 @@
-Tutorial OSGEO4W - Cálculo de bandas raster - Índices de vegetação
+Calculation of raster bands - Vegetation indices
 
-1- Qgis instalado
+1- Qgis installed
 
-2- acessar pasta raiz do Qgis;
+2- Access Qgis root folder;
 
-3- Copiar a pasta "scripts" em C:\Program Files\QGIS 3.28.1\apps\Python39 para c:/ 
+3- Copy the "scripts" folder in C:Program FilesQGIS 3.28.1appsPython39 to c:/
 
-4- Colocar o ortomosaico.tif dentro da pasta c:/scripts
+4- Place the orthomosaic.tif inside the c:/scripts folder
 
-5- Acessar OSGEO4W Shell pelo administrador;
+5- Access OSGEO4W Shell by the administrator;
 
-6- No prompt digitar cd c:/scripts +ENTER
+6- In prompt type cd c:/scripts +ENTER
 
-7- Digitar: python c:\Scripts\gdal_calc.py -A ortomosaico.tif --A_band=1 -B ortomosaico.tif --B_band=2 -C ortomosaico.tif --C_band=3 --outfile=indice.tif 
+7- python c:\Scripts\gdal_calc.py -A ortomosaico.tif --A_band=1 -B ortomosaico.tif --B_band=2 -C ortomosaico.tif --C_band=3 --outfile=indice.tif 
 --calc="formula" --NoDataValue=-999 + ENTER
 
-8- O índice de vegetação estará disponível em c:/scripts com o nome de indice.tif
+8 -The vegetation index will be available in c:/scripts with the name of index.tif
